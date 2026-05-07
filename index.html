@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AURUM | Fine Dining</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ========== PRELOADER ========== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <span class="preloader-logo">AURUM</span>
+      <div class="preloader-bar"><div class="preloader-fill" id="preloaderFill"></div></div>
+    </div>
+  </div>
+
+  <!-- ========== CURSOR ========== -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="container nav">
+      <a href="#hero" class="logo">
+        <span class="logo-icon">✦</span>
+        <span>AURUM</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#hero" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#chefs" class="nav-link">Chefs</a>
+        <a href="#reservation" class="nav-link">Reserve</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="tel:+1234567890" class="nav-phone"><i class="fa-solid fa-phone"></i> +1 234 567 890</a>
+        <a href="#reservation" class="btn btn-primary btn-sm">Book a Table</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?auto=format&fit=crop&w=1920&q=90" alt="Restaurant interior" class="hero-img active" id="heroImg0" />
+      <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1920&q=90" alt="Plated dish" class="hero-img" id="heroImg1" />
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1920&q=90" alt="Fine dining spread" class="hero-img" id="heroImg2" />
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-slide-indicators">
+      <button class="slide-dot active" data-index="0"></button>
+      <button class="slide-dot" data-index="1"></button>
+      <button class="slide-dot" data-index="2"></button>
+    </div>
+
+    <div class="container hero-content">
+      <div class="hero-tag reveal-up">Michelin Starred · Est. 2012</div>
+      <h1 class="hero-title reveal-up delay-1">
+        Fine Dining,<br /><em>Redefined.</em>
+      </h1>
+      <p class="hero-subtitle reveal-up delay-2">
+        An extraordinary culinary journey where every dish tells a story<br />of craft, passion, and the finest seasonal ingredients.
+      </p>
+      <div class="hero-actions reveal-up delay-3">
+        <a href="#menu" class="btn btn-gold">Explore Menu</a>
+        <a href="#about" class="btn btn-ghost">Our Story</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll reveal-up delay-4">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+
+    <div class="hero-badges">
+      <div class="hero-badge reveal-left delay-2">
+        <i class="fa-solid fa-star"></i>
+        <div><strong>Michelin Star</strong><span>2019 – 2026</span></div>
+      </div>
+      <div class="hero-badge reveal-left delay-3">
+        <i class="fa-solid fa-trophy"></i>
+        <div><strong>#1 in the City</strong><span>TimeOut Awards</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TICKER ========== -->
+  <div class="ticker-wrap">
+    <div class="ticker-track">
+      <span>Fine Dining</span><span class="dot">✦</span>
+      <span>Award Winning</span><span class="dot">✦</span>
+      <span>Seasonal Menu</span><span class="dot">✦</span>
+      <span>Private Events</span><span class="dot">✦</span>
+      <span>Signature Cocktails</span><span class="dot">✦</span>
+      <span>Chef's Table</span><span class="dot">✦</span>
+      <span>Sommelier Service</span><span class="dot">✦</span>
+      <span>Fine Dining</span><span class="dot">✦</span>
+      <span>Award Winning</span><span class="dot">✦</span>
+      <span>Seasonal Menu</span><span class="dot">✦</span>
+      <span>Private Events</span><span class="dot">✦</span>
+      <span>Signature Cocktails</span><span class="dot">✦</span>
+      <span>Chef's Table</span><span class="dot">✦</span>
+      <span>Sommelier Service</span><span class="dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about section" id="about">
+    <div class="container about-grid">
+      <div class="about-images reveal-left">
+        <div class="about-img-main-wrap">
+          <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=1000&q=80" alt="Plated dish closeup" class="about-img-main" />
+        </div>
+        <div class="about-img-side">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80" alt="Dining room" />
+          <img src="https://images.unsplash.com/photo-1550966871-3ed3cfd6ac77?auto=format&fit=crop&w=800&q=80" alt="Wine glasses" />
+        </div>
+      </div>
+
+      <div class="about-content reveal-right">
+        <span class="eyebrow">Our Philosophy</span>
+        <h2>Where craft meets<br /><em>pure indulgence.</em></h2>
+        <p>At AURUM, we believe that dining is an art form. Each dish is composed like a painting — with precision, intention, and soul — using ingredients sourced from local farms and artisan producers.</p>
+        <p>Our kitchen is guided by a philosophy of restraint and elegance: letting the finest produce speak for itself, elevated by classical French technique and modern creativity.</p>
+
+        <div class="about-stats">
+          <div class="astat">
+            <h3>14</h3>
+            <p>Years of excellence</p>
+          </div>
+          <div class="astat">
+            <h3>32+</h3>
+            <p>Seasonal creations</p>
+          </div>
+          <div class="astat">
+            <h3>98%</h3>
+            <p>Guest satisfaction</p>
+          </div>
+        </div>
+
+        <a href="#reservation" class="btn btn-gold">Reserve Your Evening</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MENU ========== -->
+  <section class="menu section" id="menu">
+    <div class="container">
+      <div class="section-head reveal-up">
+        <span class="eyebrow">Curated Selection</span>
+        <h2>The Menu</h2>
+        <p>Thoughtfully crafted dishes that celebrate the best of each season.</p>
+      </div>
+
+      <div class="menu-tabs reveal-up">
+        <button class="tab-btn active" data-tab="starters">Starters</button>
+        <button class="tab-btn" data-tab="mains">Mains</button>
+        <button class="tab-btn" data-tab="desserts">Desserts</button>
+        <button class="tab-btn" data-tab="drinks">Drinks</button>
+      </div>
+
+      <!-- Starters -->
+      <div class="tab-panel active" id="tab-starters">
+        <div class="menu-list">
+          <div class="menu-item reveal-up">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=600&q=80" alt="Burrata" />
+            <div class="menu-item-text">
+              <div class="menu-item-top">
+                <h3>Burrata & Heirloom Tomato</h3>
+                <span class="price">$18</span>
+              </div>
+              <p>Creamy burrata, aged balsamic reduction, microgreens and sea salt.</p>
+              <div class="menu-tags"><span>Vegetarian</span><span>Gluten Free</span></div>
+            </div>
+          </div>
+          <div class="menu-item reveal-up delay-1">
+            <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=600&q=80" alt="Scallop" />
+            <div class="menu-item-text">
+              <div class="menu-item-top">
+                <h3>Pan-Seared Scallops</h3>
+                <span class="price">$24</span>
+              </div>
+              <p>Diver scallops, cauliflower purée, caper brown butter, crispy capers.</p>
+              <div class="menu-tags"><span>Signature</span><span>Chef's Pick</span></div>
+            </div>
+          </div>
+          <div class="menu-item reveal-up delay-2">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80" alt="Salad" />
+            <div class="menu-item-text">
+              <div class="menu-item-top">
+                <h3>Garden Harvest</h3>
+                <span class="price">$15</span>
+              </div>
+              <p>Seasonal greens, shaved radish, toasted hazelnuts and citrus dressing.</p>
+              <div class="menu-tags"><span>Vegan</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mains -->
+      <div class="tab-panel" id="tab-mains">
+        <div class="menu-list">
+          <div class="menu-item reveal-up">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Steak" />
+            <div class="menu-item-text">
+              <div class="menu-item-top">
+                <h3>Dry-Aged Côte de Boeuf</h3>
+                <span class="price">$58</span>
+              </div>
+              <p>45-day aged prime ribeye, pomme purée, bone marrow jus, seasonal greens.</p>
+              <div class="menu-tags"><span>Signature</span><span>For Two</span></div>
+            </div>
+          </div>
+          <div class="menu-item reveal-up delay-1">
+            <img src="https://images.unsplash.com/photo-1521389508051-d7ffb5dc8f70?auto=format&fit=crop&w=600&q=80" alt="Pasta" />
+            <div class="menu-item-text">
+              <div class="menu-item-top">
+                <h3>Black Truffle Tagliatelle</h3>
+                <span class="price">$38</span>
+              </div>
+              <p>House-made pasta, Périgord truffle, aged parmesan, cultured butter.</p>
+              <div class="menu-tags"><span>Vegetarian</span><span>Chef's Pick</span></div>
+            </div>
+          </div>
+          <div class="menu-item reveal-up delay-2">
+            <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=600&q=80" alt="Salmon" />
+            <div class="menu-item-text">
+              <div class="menu-item-top">
+                <h3>Atlantic Salmon en Croûte</h3>
+                <span class="price">$42</span>
+              </div>
+              <p>Wild salmon wrapped in puff pastry, dill beurre blanc, braised fennel.</p>
+              <div class="menu-tags"><span>Gluten Free option</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desserts -->
+      <div class="tab-panel" id="tab-desserts">
+        <div class="menu-list">
+          <div class="menu-item reveal-up">
+            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=600&q=80" alt="Chocolate" />
+            <div class="menu-item-text">
+              <div class="menu-item-top">
+                <h3>Dark Chocolate Sphere</h3>
+                <span class="price">$16</span>
+              </div>
+              <p>Valrhona chocolate shell, raspberry coulis, vanilla Chantilly.</p>
+              <div class="menu-tags"><span>Signature</span></div>
+            </div>
+          </div>
+          <div class="menu-item reveal-up delay-1">
+            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=600&q=80" alt="Tart" />
+            <div class="menu-item-text">
+              <div class="menu-item-top">
+                <h3>Lemon Verbena Tart</h3>
+                <span class="price">$14</span>
+              </div>
+              <p>Crisp sablé pastry, lemon curd, Italian meringue, edible flowers.</p>
+              <div class="menu-tags"><span>Vegetarian</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Drinks -->
+      <div class="tab-panel" id="tab-drinks">
+        <div class="menu-list">
+          <div class="menu-item reveal-up">
+            <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=600&q=80" alt="Cocktail" />
+            <div class="menu-item-text">
+              <div class="menu-item-top">
+                <h3>Golden Hour</h3>
+                <span class="price">$19</span>
+              </div>
+              <p>Aged whisky, honey syrup, fresh lemon, smoked rosemary sprig.</p>
+              <div class="menu-tags"><span>Signature</span></div>
+            </div>
+          </div>
+          <div class="menu-item reveal-up delay-1">
+            <img src="https://images.unsplash.com/photo-1551538827-9c037cb4f32a?auto=format&fit=crop&w=600&q=80" alt="Wine" />
+            <div class="menu-item-text">
+              <div class="menu-item-top">
+                <h3>Sommelier Wine Pairing</h3>
+                <span class="price">$65</span>
+              </div>
+              <p>Six curated pours matched to your tasting menu by our head sommelier.</p>
+              <div class="menu-tags"><span>Experience</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GALLERY ========== -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <div class="section-head reveal-up">
+        <span class="eyebrow">Visual Story</span>
+        <h2>The AURUM Experience</h2>
+      </div>
+
+      <div class="gallery-grid reveal-up">
+        <div class="gal-item gal-tall" data-lightbox="true">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80" alt="Dining room" />
+          <div class="gal-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="gal-item" data-lightbox="true">
+          <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=900&q=80" alt="Food" />
+          <div class="gal-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="gal-item" data-lightbox="true">
+          <img src="https://images.unsplash.com/photo-1550966871-3ed3cfd6ac77?auto=format&fit=crop&w=900&q=80" alt="Wine" />
+          <div class="gal-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="gal-item gal-wide" data-lightbox="true">
+          <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=80" alt="Plating" />
+          <div class="gal-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="gal-item" data-lightbox="true">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80" alt="Spread" />
+          <div class="gal-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <button class="lb-close" id="lbClose"><i class="fa-solid fa-xmark"></i></button>
+      <button class="lb-prev" id="lbPrev"><i class="fa-solid fa-chevron-left"></i></button>
+      <button class="lb-next" id="lbNext"><i class="fa-solid fa-chevron-right"></i></button>
+      <img src="" alt="Gallery" id="lbImg" />
+    </div>
+  </section>
+
+  <!-- ========== CHEFS ========== -->
+  <section class="chefs section" id="chefs">
+    <div class="container">
+      <div class="section-head reveal-up">
+        <span class="eyebrow">The Team</span>
+        <h2>Meet Our Chefs</h2>
+        <p>Masters of their craft, driven by curiosity and passion.</p>
+      </div>
+
+      <div class="chefs-grid">
+        <div class="chef-card reveal-up">
+          <div class="chef-img-wrap">
+            <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=800&q=80" alt="Chef Marco" />
+            <div class="chef-badge">Head Chef</div>
+          </div>
+          <div class="chef-info">
+            <h3>Marco Vitelli</h3>
+            <p>Trained at Le Cordon Bleu Paris, Marco brings 18 years of classical French and Italian technique to every plate.</p>
+            <div class="chef-socials">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="chef-card reveal-up delay-1">
+          <div class="chef-img-wrap">
+            <img src="https://images.unsplash.com/photo-1607631568010-a87245c0daf8?auto=format&fit=crop&w=800&q=80" alt="Chef Elise" />
+            <div class="chef-badge">Pastry Chef</div>
+          </div>
+          <div class="chef-info">
+            <h3>Elise Fontaine</h3>
+            <p>A pioneer in modern dessert art, Elise has designed award-winning tasting menus across Paris and New York.</p>
+            <div class="chef-socials">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="chef-card reveal-up delay-2">
+          <div class="chef-img-wrap">
+            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=80" alt="Chef Kai" />
+            <div class="chef-badge">Sous Chef</div>
+          </div>
+          <div class="chef-info">
+            <h3>Kai Nakamura</h3>
+            <p>Rooted in Japanese culinary philosophy, Kai elevates each dish through mindful balance and impeccable technique.</p>
+            <div class="chef-socials">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="testimonials section">
+    <div class="container">
+      <div class="section-head reveal-up">
+        <span class="eyebrow">Guest Voices</span>
+        <h2>What Our Guests Say</h2>
+      </div>
+
+      <div class="testimonials-slider reveal-up" id="testimonialsSlider">
+        <div class="tslide active">
+          <div class="stars">★★★★★</div>
+          <blockquote>"An absolutely transcendent evening. The truffle pasta alone was worth the trip — every bite felt like an act of poetry."</blockquote>
+          <div class="tguest">
+            <div class="tavatar">S</div>
+            <div><h4>Sophie Laurent</h4><span>Paris, FR</span></div>
+          </div>
+        </div>
+        <div class="tslide">
+          <div class="stars">★★★★★</div>
+          <blockquote>"The service was impeccable and the sommelier pairing was genuinely life-changing. We will be back for every anniversary."</blockquote>
+          <div class="tguest">
+            <div class="tavatar">J</div>
+            <div><h4>James & Rachel Chen</h4><span>London, UK</span></div>
+          </div>
+        </div>
+        <div class="tslide">
+          <div class="stars">★★★★★</div>
+          <blockquote>"AURUM is without doubt the finest dining experience I've had in the city. The chocolate sphere was pure theatre and tasted divine."</blockquote>
+          <div class="tguest">
+            <div class="tavatar">N</div>
+            <div><h4>Nadia Osei</h4><span>New York, US</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tcontrols reveal-up">
+        <button id="tPrev"><i class="fa-solid fa-arrow-left"></i></button>
+        <div class="tdots" id="tDots">
+          <span class="tdot active"></span>
+          <span class="tdot"></span>
+          <span class="tdot"></span>
+        </div>
+        <button id="tNext"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RESERVATION ========== -->
+  <section class="reservation section" id="reservation">
+    <div class="reservation-bg">
+      <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1920&q=80" alt="Restaurant" />
+      <div class="reservation-overlay"></div>
+    </div>
+
+    <div class="container reservation-inner">
+      <div class="reservation-copy reveal-left">
+        <span class="eyebrow">Reservations</span>
+        <h2>An evening you<br /><em>won't forget.</em></h2>
+        <p>Reserve your table online and let us take care of every detail — from your seating preference to dietary requirements.</p>
+        <ul class="res-info">
+          <li><i class="fa-solid fa-clock"></i> Mon – Thu: 6:00 PM – 10:00 PM</li>
+          <li><i class="fa-solid fa-clock"></i> Fri – Sun: 5:00 PM – 11:30 PM</li>
+          <li><i class="fa-solid fa-location-dot"></i> 21 Rue du Lumière, Downtown</li>
+          <li><i class="fa-solid fa-phone"></i> +1 234 567 890</li>
+        </ul>
+      </div>
+
+      <form class="res-form reveal-right" id="reservationForm">
+        <h3>Make a Reservation</h3>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" placeholder="First name" required />
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" placeholder="Last name" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" placeholder="+1 000 000 000" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="date">Date</label>
+            <input type="date" id="date" required />
+          </div>
+          <div class="form-group">
+            <label for="time">Time</label>
+            <select id="time" required>
+              <option value="">Select time</option>
+              <option>5:00 PM</option>
+              <option>6:00 PM</option>
+              <option>7:00 PM</option>
+              <option>7:30 PM</option>
+              <option>8:00 PM</option>
+              <option>9:00 PM</option>
+              <option>10:00 PM</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="guests">Guests</label>
+            <select id="guests" required>
+              <option value="">Number of guests</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6+</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="occasion">Occasion</label>
+            <select id="occasion">
+              <option value="">Select (optional)</option>
+              <option>Anniversary</option>
+              <option>Birthday</option>
+              <option>Business Dinner</option>
+              <option>Proposal</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="notes">Special Requests</label>
+          <textarea id="notes" rows="3" placeholder="Dietary requirements, allergies, seating preferences..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-gold btn-full">Confirm Reservation</button>
+
+        <div class="form-success" id="formSuccess">
+          <i class="fa-solid fa-circle-check"></i>
+          <strong>Reservation Confirmed!</strong>
+          <p>We'll send a confirmation to your email shortly.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <a href="#hero" class="logo">
+          <span class="logo-icon">✦</span>
+          <span>AURUM</span>
+        </a>
+        <p>An award-winning fine dining experience built on tradition, creativity, and an uncompromising pursuit of excellence.</p>
+        <div class="footer-socials">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-tripadvisor"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#chefs">Our Chefs</a></li>
+          <li><a href="#reservation">Reservations</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <ul>
+          <li>Mon – Thu: 6 PM – 10 PM</li>
+          <li>Fri – Sun: 5 PM – 11:30 PM</li>
+          <li>Brunch: Sat & Sun 11 AM – 2 PM</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>21 Rue du Lumière</li>
+          <li>Downtown District</li>
+          <li>+1 234 567 890</li>
+          <li>hello@aurum.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 AURUM Fine Dining. All rights reserved.</p>
+      <p>Privacy Policy · Terms of Use</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
